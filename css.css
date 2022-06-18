@@ -1,0 +1,66 @@
+*{
+  background-color: bisque;
+}
+h1{
+  text-align: center;
+}
+h1:hover{
+  color: red;
+}
+.pricetag{
+  position: relative;
+  left: 6%;
+}
+.pricetag:active{
+  color: brown;
+}
+#footer{
+  text-align: center;
+}
+table{
+  position: relative;
+  left: 20%;
+  bottom: 900px;
+  text-align: center;
+  width:800px;
+  height:100px;
+}
+.text:focus{
+  background-color: yellow;
+}
+li.throat{
+  color: blue;
+}
+.cow>ol{
+  color: red;
+}
+ ul> .pig{
+  color: white;
+}
+.chickenleg+li{
+  color:brown;
+}
+.pigthroat~li{
+  color:blueviolet;
+}
+.chicken *:first-child{
+  color:white;
+}
+.chicken *:last-child{
+  color:gold;
+}
+.cow *:nth-child(3){
+  color:white;
+}
+#footer *:not(.question){
+  color: red;
+}
+h1::before{
+  content: "★";
+}
+h1::after{
+  content: "★";
+}
+[placeholder]{
+  background-color: white;
+}

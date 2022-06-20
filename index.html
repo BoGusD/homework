@@ -5,37 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coding on homework</title>
+  <link rel="stylesheet" href="./css.css">
 </head>
-<STYLE>
-  *{
-    background-color: bisque;
-  }
-  h1{
-    text-align: center;
-  }
-  h2{
-    position: relative;
-    left: 6%;
-  }
-  #footer{
-    text-align: center;
-  }
-  table{
-    position: relative;
-    left: 20%;
-    bottom: 900px;
-    text-align: center;
-    width:800px;
-    height:100px;
-  }
-</STYLE>
 <body>
   <h1>코딩온 정육점</h1>
-  <h2>가격표</h2>
+  <h2 class="pricetag">가격표</h2>
   <ul>
-      <li><b>소</b>
+      <li class="cow"><b>소</b>
       <ol>
-        <li>목살<br>\14400</li></li>
+        <li class="throat">목살<br>\14400</li></li>
         <li>양지살<br>\12100</li></li>
         <li>부채살<br>\9000</li></li>
         <li>안심<br>\11400</li></li>
@@ -43,20 +21,20 @@
         <li>채끝살<br>\8500</li></li>
       </ol>
     </li>
-    <li><b>돼지</b>
+    <li class="pig"><b>돼지</b>
       <ol>
         <li>뒷다리살<br>\9000</li></li>
-        <li>목살<br>\15000</li></li>
+        <li class="pigthroat">목살<br>\15000</li></li>
         <li>삽겹살<br>\11000</li></li>
         <li>갈매기살<br>\8400</li></li>
         <li>항정살<br>\8000</li></li>
         <li>등심<br>\9500</li></li>
       </ol>
     </li>
-      <li><b>닭</b>
+      <li class="chicken"><b>닭</b>
       <ol>
         <li>가슴살<br>\4500</li></li>
-        <li>다리살<br>\7800</li></li>
+        <li class="chickenleg">다리살<br>\7800</li></li>
         <li>안심<br>\6000</li></li>
         <li>어깨살<br>\4400</li></li>
         <li>닭발<br>\3000</li></li>
@@ -70,6 +48,8 @@
             
   <a href="https://search.shopping.naver.com/search/all?frm=NVSHATT&origQuery=%EC%86%8C%20%EC%95%88%EC%8B%AC&pagingIndex=1&pagingSize=40&productSet=total&query=%EC%86%8C%20%EC%95%88%EC%8B%AC&sort=rel&spec=M10013913%7CM10744089&timestamp=&viewType=list" target="blank">싸이트 이동</a>
   </pre>
+  <p class="question" >문의사항</p>
+  <input type="text" class="text" placeholder="문의사항을 적어주세요." />
   </div>
   <table border="2"> 
     <tr>
@@ -100,9 +80,9 @@
     </tr>
     <tr>
       <td>상태 확인</td>
-      <td><input type="checkbox"></td>
-      <td><input type="checkbox"></td>
-      <td><input type="checkbox"></td>
+      <td><input type="checkbox" checked></td>
+      <td><input type="checkbox" checked></td>
+      <td><input type="checkbox" checked></td>
     </tr>
   </table>
 </body>

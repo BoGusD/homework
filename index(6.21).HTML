@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin:0px;
+    }
+    .background{
+      display: inline-block;
+      background-color: white;
+      margin:0px
+    }
+    .요일{
+      margin:0px;
+    }
+    .요일 *:nth-child(2n){
+      background-color: orange;
+    }
+    /* .box{
+      display: inline-block;
+      width:70px;
+      height:70px;
+      line-height:70px;
+      background-color: gray;
+      text-align: center;
+    } */
+    .day{
+      display: inline-block;
+      width:70px;
+      height:70px;
+      line-height:70px;
+      background-color: gray;
+      text-align: center;
+      margin:-3px;
+    }
+    .box{
+      display: inline-block;
+      width:70px;
+      height:70px;
+      background-color: gray;
+      margin:-3px;
+    }
+    .box1::after{
+      content: "포스코";
+    }
+    .일자 *:nth-child(5){
+      background-color: blue;
+    }
+    .일자 *:nth-child(1){
+      background-color: white;
+    }
+    .일자 *:nth-child(2){
+      background-color: white;
+    }
+    .일자 *:nth-child(3){
+      background-color: white;
+    }
+    .일자 *:nth-child(4){
+      background-color: white;
+    }
+    .일자 *:nth-child(6){
+      background-color: whitesmoke;
+    }
+    .일자 *:nth-child(7){
+      background-color: bisque;
+    }
+    .일자2 *:nth-child(n+1){
+      background-color: skyblue;
+    }
+    .일자2 *:nth-child(2n){
+      background-color: rgb(73, 103, 235);
+    }
+    .일자2 *:nth-child(7){
+      background-color: brown;
+    }
+    .일자3 *:nth-child(n+1){
+      background-color: skyblue;
+    }
+    .일자3 *:nth-child(2n){
+      background-color: rgb(73, 103, 235);
+    }
+    .일자3 *:nth-child(7){
+      background-color: bisque;
+    }
+     .일자4 *:nth-child(n+1){
+      background-color: skyblue;
+    }
+    .일자4 *:nth-child(2n){
+      background-color: rgb(73, 103, 235);
+    }
+    .일자4 *:nth-child(7){
+      background-color: brown;
+    }
+    .일자5 *:nth-child(n+1){
+      background-color: skyblue;
+    }
+    .일자5 *:nth-child(2n){
+      background-color: rgb(73, 103, 235);
+    }
+    .일자5 *:nth-child(7){
+      background-color: bisque;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="요일">
+      <div class="day">월</div>
+      <div class="day">화</div>
+      <div class="day">수</div>
+      <div class="day">목</div>
+      <div class="day">금</div>
+      <div class="day">토</div>
+      <div class="day">일</div> 
+    </div>
+    <div class="일자">
+      <div class="box">&nbsp;</div>
+      <div class="box">&nbsp;</div>
+      <div class="box">&nbsp;</div>
+      <div class="box">&nbsp;</div>
+      <div class="box box1">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div> 
+    </div>
+    <div class="일자2">
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div> 
+    </div>
+    <div class="일자3">
+      <div class="box">11</div>
+      <div class="box">12</div>
+      <div class="box">13</div>
+      <div class="box">14</div>
+      <div class="box">15</div>
+      <div class="box">16</div>
+      <div class="box">17</div> 
+    </div>
+    <div class="일자4">
+      <div class="box">18</div>
+      <div class="box">19</div>
+      <div class="box">20</div>
+      <div class="box">21</div>
+      <div class="box">22</div>
+      <div class="box">23</div>
+      <div class="box">24</div> 
+    </div>
+    <div class="일자5">
+      <div class="box">25</div>
+      <div class="box">26</div>
+      <div class="box">27</div>
+      <div class="box">28</div>
+      <div class="box">29</div>
+      <div class="box">30</div>
+      <div class="box">31</div> 
+    </div>
+</div>
+
+</body>
+</html>

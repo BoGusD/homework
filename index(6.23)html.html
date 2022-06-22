@@ -32,8 +32,9 @@
       /* background-position: fixed; */
       flex-wrap: wrap; 
       overflow: auto;
-      flex-direction: row;
-      justify-content: space-around;
+      /* flex-direction: row; */
+      /* justify-content: space-between; */
+      max-width: 500%;
     }
     .container2{
       display: flex;
@@ -44,10 +45,12 @@
       background-color: yellow;
       flex-wrap: wrap;
       overflow: auto;
-      justify-content: space-evenly;
+      /* justify-content: space-evenly; */
+      max-width: 500%;
     }
     .container1>div{
-      background-position: cover;
+      background-position: contain;
+      background-size: cover;
       font-weight: 700;
       background-color: brown;
       flex-basis: 150px;
@@ -57,42 +60,51 @@
       color:aqua;
       line-height: 50px;
       margin: auto;
+      /* background-attachment: fixed; */
+      /* padding: 3px; */
+      
     }
    
     .container2>div{
       background-position: cover;
       font-weight: 700;
       background-color: gray;
-      background-size: conver;
+      background-size: cover;
       flex-basis: 150px;
       border-radius: 30px;
       text-align: center;
       line-height: 50px;
       height: 50px;
       margin:auto;
+      /* background-attachment: fixed; */
       color: yellow;  
     }
     .container1>div:hover{
-      background-attachment: fixed;
+      /* background-attachment: fixed; */
       background-color: orange;
       color:black;
     }
     .container2>div:hover{
-      background-attachment: fixed;
+      /* background-attachment: fixed; */
       background-color: blue;
       color:white;
+      
     }
     .item1{
-      flex-grow: 1; 
+      flex-grow: 1;
+       
     }
     .item2{
       flex-grow: 1;
+      
     }
     .item3{
       flex-grow: 1;
+      
     }
     .item4{
       flex-grow: 2;
+      
     }
     
   </style>

@@ -8,12 +8,110 @@
   <style>
     body{
       height: 3000px;
+      background-attachment: fixed;
+      /* background-position-x: right; */
+      background-size: cover;
       background-image: url("https://mblogthumb-phinf.pstatic.net/20160127_177/krazymouse_1453865104404DjQIi_PNG/%C4%AB%C4%AB%BF%C0%C7%C1%B7%BB%C1%EE_%B6%F3%C0%CC%BE%F0.png?type=w2");
       margin: 0;
+      background-repeat: no-repeat;
     }
+    .background{
+      position: relative;
+      left: 20px;
+      height: 3000px;
+      width: 100px;
+      background: linear-gradient(orange, black);
+    }
+    .container1{
+      display: flex;
+      position: fixed;
+      height: 70px;
+      width: 100%;
+      top:0px;
+      background-color: aqua;
+      /* background-position: fixed; */
+      flex-wrap: wrap; 
+      overflow: auto;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .container2{
+      display: flex;
+      position: fixed;
+      height: 70px;
+      width: 100%;
+      bottom: 0px;
+      background-color: yellow;
+      flex-wrap: wrap;
+      overflow: auto;
+      justify-content: space-evenly;
+    }
+    .container1>div{
+      background-position: cover;
+      font-weight: 700;
+      background-color: brown;
+      flex-basis: 150px;
+      border-radius: 30px;
+      height: 50px;
+      text-align: center;
+      color:aqua;
+      line-height: 50px;
+      margin: auto;
+    }
+   
+    .container2>div{
+      background-position: cover;
+      font-weight: 700;
+      background-color: gray;
+      background-size: conver;
+      flex-basis: 150px;
+      border-radius: 30px;
+      text-align: center;
+      line-height: 50px;
+      height: 50px;
+      margin:auto;
+      color: yellow;  
+    }
+    .container1>div:hover{
+      background-attachment: fixed;
+      background-color: orange;
+      color:black;
+    }
+    .container2>div:hover{
+      background-attachment: fixed;
+      background-color: blue;
+      color:white;
+    }
+    .item1{
+      flex-grow: 1; 
+    }
+    .item2{
+      flex-grow: 1;
+    }
+    .item3{
+      flex-grow: 1;
+    }
+    .item4{
+      flex-grow: 2;
+    }
+    
   </style>
 </head>
 <body>
+  <div class="image"></div>
+  <div class="background"></div>
+  <div class="container1">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+    <div class="item">item4</div>
+  </div>
+  <div class="container2">
+    <div class="item1">고정비율1</div>
+    <div class="item2">고정비율1</div>
+    <div class="item3">고정비율1</div>
+    <div class="item4">고정비율2</div>
+  </div>
   
 </body>
 </html>

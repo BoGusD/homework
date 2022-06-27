@@ -32,7 +32,20 @@ h1{
 
 }
 .springeasy4:active{
-  
+
+}
+/* <!-- 메뉴화면 밑 배경사진 --> */
+.menubackground{
+  display: flex;
+  width: 100%;
+}
+.menubackground1{
+  display: flex;
+  width: 100%;
+}
+.menubackground2{
+  display: flex;
+  width: 100%;
 }
 .menu{
   display: flex;

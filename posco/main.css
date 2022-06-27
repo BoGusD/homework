@@ -1,0 +1,102 @@
+
+
+body{
+
+}
+.topbackground{
+  background-color: aqua;
+}
+h1{
+  text-align: center;
+  color: brown;
+}
+.menu{
+  display: flex;
+  width:auto;
+  margin-top:20px;
+  height:280px;
+  justify-content: space-evenly;
+}
+li{
+  list-style: none;
+}
+@font-face {
+  font-family: 'twaysky';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* .springbackground{
+  background: linear-gradient(rgb(250, 182, 193),rgb(249, 234, 236)); 
+  background-size:contain;
+} */
+.summerbackground{
+
+}
+.fallbackground{
+
+}
+.winterbackground{
+  
+}
+.spring{
+  margin-top:15px;
+  font-size: 30px;
+  font-family: 'twaysky';
+}
+.summer{
+  margin-top:15px;
+  font-size: 30px;
+  font-family: 'twaysky';
+}
+.fall{
+  margin-top:15px;
+  font-size: 30px;
+  font-family: 'twaysky';
+}
+.winter{
+  margin-top:15px;
+  font-size: 30px;
+  font-family: 'twaysky';
+}
+.spring #list1{
+  padding: 10px;
+  font-size: 20px;
+}
+.summer #list2{
+  padding: 10px;
+  font-size: 20px;
+}
+.fall #list3{
+  padding: 10px;
+  font-size: 20px;
+}
+.winter #list4{
+  padding: 10px;
+  font-size: 20px;
+}
+.minimer{
+  padding: 5px 0px;
+  font-size: 20px;
+  font-family: 'twaysky';
+}
+.easy{
+  padding: 5px 0px;
+  font-size: 20px;
+  font-family: 'twaysky';
+}
+.street{
+  padding: 5px 0px;
+  font-size: 20px;
+  font-family: 'twaysky';
+}
+.amacage{
+  padding: 5px 0px;
+  font-size: 20px;
+  font-family: 'twaysky';
+}
+.luxuary{
+  padding: 5px 0px;
+  font-size: 20px;
+  font-family: 'twaysky';
+}

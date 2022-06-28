@@ -13,37 +13,20 @@ h1{
   /* height:280px; */
   justify-content: space-evenly;
 }
-li{
-  list-style: none;
-}
 @font-face {
   font-family: 'twaysky';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-.spring{
+#list1 > li, #list2 > li, #list3 >li, #list4 > li{
   margin-top:15px;
   font-size: 30px;
   font-family: 'twaysky';
 }
-.summer{
-  margin-top:15px;
-  font-size: 30px;
-  font-family: 'twaysky';
+li{
+  list-style: none;
 }
-.fall{
-  margin-top:15px;
-  font-size: 30px;
-  font-family: 'twaysky';
-}
-.winter{
-  margin-top:15px;
-  font-size: 30px;
-  font-family: 'twaysky';
-}
-
-
 .bestbackground{
   background-image: url("https://mblogthumb-phinf.pstatic.net/MjAxNzEyMjhfMTIg/MDAxNTE0NDYzODEwODY1.M3yWAs_hZE308RN3ENCl-jilb5SZkO-gW4zHxnH8_nUg.j2G25g4bMbyi5oCrHOkjnheyjes3WkK7Oobqr62wj5cg.JPEG.titanicool/%EC%98%B7_%EC%83%89%EC%B9%A0%EA%B3%B5%EB%B6%80.jpg?type=w800");
   background-repeat : no-repeat;

@@ -1,8 +1,14 @@
 /* 공통 CSS */
-
-
+.topbackground {
+  top:0%;
+  position:fixed;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+}
 
 .topbackground>p {
+
   display: inline-block;
   font-size: 20px;
   margin: 15px 10px;
@@ -11,34 +17,35 @@
 
 .topbackground>p:hover {
   opacity: 60%;
+  cursor: pointer;
 }
 
 .topbackground>p1 {
   justify-content: space-evenly;
   font-size : 20px;
   margin : 15px 10px;
-  float : right;
   font-family : 'Poly', georgia, serif;
 }
 
 .topbackground>p1:hover {
   opacity: 60%;
+  cursor: pointer;
 }
+
 .clothingon {
-  display:flex;
-  position: fixed;
-  margin-left:1000px;
+  display:inline-block;
+  margin:15px 450px;
+  padding-left: 80px;
   color: black;
-  text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   font-family: 'Poly', georgia, serif;
-  padding: 10px;
 }
 
 h1{
   text-align: center;
   color: brown;
 }
+
 a{
   text-decoration: none;
   color:black;
@@ -52,7 +59,7 @@ a{
 }
 
 .menu:hover {
-  opacity: 70%;
+  cursor: pointer;
 }
 
 @font-face {
@@ -66,13 +73,14 @@ li{
 }
 
 #list1 > li, #list2 > li, #list3 >li, #list4 > li{
+  color:  black;
   margin-top:15px;
   font-size: 15px;
   font-family: 'twaysky';
 }
 #list1 > li:hover, #list2 > li:hover, #list3 >li:hover, #list4 > li:hover {
   font-size: 16px;
-  background-color: rgb(249, 219, 224); 
+  background-color: whitesmoke; 
 }
 .menubackground{
   background-repeat : no-repeat;

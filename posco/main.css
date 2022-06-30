@@ -1,18 +1,60 @@
 /* 공통 CSS */
+
+
+
+.topbackground>p {
+  display: inline-block;
+  font-size: 20px;
+  margin: 15px 10px;
+  font-family: 'Poly', georgia, serif;
+}
+
+.topbackground>p:hover {
+  opacity: 60%;
+}
+
+.topbackground>p1 {
+  justify-content: space-evenly;
+  font-size : 20px;
+  margin : 15px 10px;
+  float : right;
+  font-family : 'Poly', georgia, serif;
+}
+
+.topbackground>p1:hover {
+  opacity: 60%;
+}
+.clothingon {
+  display:flex;
+  position: fixed;
+  margin-left:1000px;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Poly', georgia, serif;
+  padding: 10px;
+}
+
 h1{
   text-align: center;
   color: brown;
 }
-.topbackground{
-  background-color: aqua;
+a{
+  text-decoration: none;
+  color:black;
 }
 .menu{
   display: flex;
-  width:auto;
-  margin-top:20px;
-  /* height:280px; */
   justify-content: space-evenly;
+  margin-top:120px;
+  font-size: 30px;
+  font-family: 'twaysky';
 }
+
+.menu:hover {
+  opacity: 70%;
+}
+
 @font-face {
   font-family: 'twaysky';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
@@ -22,23 +64,26 @@ h1{
 li{
   list-style: none;
 }
+
 #list1 > li, #list2 > li, #list3 >li, #list4 > li{
   margin-top:15px;
-  font-size: 30px;
+  font-size: 15px;
   font-family: 'twaysky';
 }
+#list1 > li:hover, #list2 > li:hover, #list3 >li:hover, #list4 > li:hover {
+  font-size: 16px;
+  background-color: rgb(249, 219, 224); 
+}
 .menubackground{
-  display: flex;  
-}
-.bestbackground{
-  background-image: url("https://mblogthumb-phinf.pstatic.net/MjAxNzEyMjhfMTIg/MDAxNTE0NDYzODEwODY1.M3yWAs_hZE308RN3ENCl-jilb5SZkO-gW4zHxnH8_nUg.j2G25g4bMbyi5oCrHOkjnheyjes3WkK7Oobqr62wj5cg.JPEG.titanicool/%EC%98%B7_%EC%83%89%EC%B9%A0%EA%B3%B5%EB%B6%80.jpg?type=w800");
   background-repeat : no-repeat;
-  background-size: cover;
-  display : flex; 
-  /* margin-top: 300px; */  
+  display : flex;  
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 60px;  
 }
-.bestbackground > img{
-  padding: 10px;
+.menubackground>img{
+  width: 550px;
+ height: 700px;  
 }
 .footer {
   position: fixed;
@@ -48,3 +93,50 @@ li{
   color: white;
   bottom: 0;
 }
+.bottombackground {  
+  opacity: 0.5;
+  padding: 0px 50px;
+  text-align: center;
+  align-items: center;
+  line-height: 50px;
+  justify-content: center;
+}
+.bottombackground2 {
+  display: inline-flex;
+  background-color: rgb(250, 206, 214);
+  height: 50px;
+  width: 100%;
+  bottom: 10px;
+  opacity: 0.7;
+  bottom: 10px;
+  text-align: center;
+  align-items: center;
+  line-height: 50px;
+  justify-content: center;
+}
+span {
+  display: inline;
+  font-size: small;
+  margin: 10px;
+  justify-content: space-evenly;
+  font-family:'Poly',georgia,serif;
+  font-size: 10px;
+  cursor: pointer;  
+
+}
+
+.right_message_insta {
+  position:fixed;
+  left:95%;
+  bottom:60px;
+}
+.right_message_kakao {
+  position:fixed;
+  left:95.5%;
+  bottom:150px;
+}
+/* .rigth_message img{
+ 
+  margin-left : 90%;
+
+} */

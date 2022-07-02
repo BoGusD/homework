@@ -1,0 +1,12 @@
+.easy{
+  background-repeat : no-repeat;
+  display : flex;  
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 60px;  
+  background-size: contain; 
+
+}
+.easy img{
+  height: 500px;  
+}

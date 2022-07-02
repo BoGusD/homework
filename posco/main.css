@@ -1,15 +1,18 @@
 /* 공통 CSS */
+
 .topbackground {
   top:0%;
   position:fixed;
-  height: 100px;
+  height: 70px;
   width: 100%;
   background-color: white;
+  z-index: 500  ;
+  
 }
 
 .topbackground>p {
 
-  display: inline-block;
+  display: inline-flex;
   font-size: 20px;
   margin: 15px 10px;
   font-family: 'Poly', georgia, serif;
@@ -27,18 +30,46 @@
   font-family : 'Poly', georgia, serif;
 }
 
+.hiddenmenu {
+  display: none;
+}
+
+@media screen and (max-width: 800px){
+  .hiddenmenu {
+    color: black;
+    font-size: 20px;
+    margin: 100px 100px;
+    font-weight: bold;  
+  } 
+}
+
+@media screen and (max-width:700px) {
+  .test {
+    display:none;
+  }
+  
+}
+
+@media screen and (max-width:700px) {
+  .menu {
+    display: none;
+  }
+  
+}
+
 .topbackground>p1:hover {
   opacity: 60%;
   cursor: pointer;
 }
 
 .clothingon {
-  display:inline-block;
+  display:inline-flex;
   margin:15px 450px;
   padding-left: 80px;
   color: black;
   font-size: 50px;
   font-family: 'Poly', georgia, serif;
+  cursor: pointer;
 }
 
 h1{
@@ -49,6 +80,7 @@ h1{
 a{
   text-decoration: none;
   color:black;
+  cursor: pointer;
 }
 .menu{
   display: flex;
@@ -56,6 +88,7 @@ a{
   margin-top:120px;
   font-size: 30px;
   font-family: 'twaysky';
+  cursor: pointer;
 }
 
 .menu:hover {
@@ -68,8 +101,10 @@ a{
   font-weight: normal;
   font-style: normal;
 }
+
 li{
   list-style: none;
+  cursor: pointer;
 }
 
 #list1 > li, #list2 > li, #list3 >li, #list4 > li{
@@ -78,6 +113,8 @@ li{
   font-size: 15px;
   font-family: 'twaysky';
 }
+#list1 >
+
 #list1 > li:hover, #list2 > li:hover, #list3 >li:hover, #list4 > li:hover {
   font-size: 16px;
   background-color: whitesmoke; 
@@ -85,14 +122,42 @@ li{
 .menubackground{
   background-repeat : no-repeat;
   display : flex;  
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 60px;  
 }
-.menubackground>img{
-  width: 550px;
- height: 700px;  
+
+.menubackground img{
+  width: 500px;
+  height: 700px;  
 }
+
+.menubackground img:hover {
+  opacity: 80%;
+}
+
+.pictext {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  font-size: 30px;
+  font-family: 'Poly', georgia, serif;
+}
+
+.narrowbox {
+  margin-top: 200px;
+  height: 10px;
+  background-color: rgb(47, 46, 46);
+}
+
+.bestitem_text {
+  padding-top: 100px;
+  color: rgb(137, 126, 126);
+  font-size: 50px;
+  font-family: 'Poly', georgia, serif;
+  text-align: center;
+}
+
 .footer {
   position: fixed;
   line-height: 100px;
@@ -101,17 +166,20 @@ li{
   color: white;
   bottom: 0;
 }
-.bottombackground {  
+.bottombackground { 
+  border-top: 3px dashed rgb(204, 204, 204); 
   opacity: 0.5;
-  padding: 0px 50px;
+  padding: 10px 40px;
+  margin-top: 200px;
   text-align: center;
   align-items: center;
-  line-height: 50px;
+  line-height: 100px;
   justify-content: center;
 }
 .bottombackground2 {
   display: inline-flex;
-  background-color: rgb(250, 206, 214);
+  background-color: rgb(225, 218, 218);
+  color: black;
   height: 50px;
   width: 100%;
   bottom: 10px;
@@ -119,32 +187,21 @@ li{
   bottom: 10px;
   text-align: center;
   align-items: center;
-  line-height: 50px;
+  line-height: 30px;
   justify-content: center;
 }
 span {
   display: inline;
   font-size: small;
-  margin: 10px;
+  margin: 8px;
   justify-content: space-evenly;
   font-family:'Poly',georgia,serif;
-  font-size: 10px;
   cursor: pointer;  
 
 }
-
-.right_message_insta {
+.right_message{
   position:fixed;
   left:95%;
   bottom:60px;
+  cursor: pointer;
 }
-.right_message_kakao {
-  position:fixed;
-  left:95.5%;
-  bottom:150px;
-}
-/* .rigth_message img{
- 
-  margin-left : 90%;
-
-} */

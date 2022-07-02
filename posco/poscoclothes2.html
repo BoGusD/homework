@@ -10,23 +10,25 @@
   <link rel="stylesheet" href="sub2.css">
 </head>
 
-<body>>
+<body>
   <div class="topbackground">
     <p>login</p>
     <p>my page</p>
     <p>shopping cart</p>
     <p>join us</p>
     <p>order </p>
-    
-    <p1>🔍<input type="text"></p1>
+
+    <div class="clothingon"><a href="poscoclothes.html">Clothing_On</a></div>
+
     <p1>Q&A</p1>
     <p1>review</p1>
     <p1>notice</p1>
-  </div>
-  <div class="clothingon"><a href="poscoclothes.html">Clothing_On</a></div>
+    <p1>🔍<input type="text"></p1>  
+   </div>
+ 
   <div class="menu">
     <div class="springbackground">
-      <div class="spring" onclick="display('list1')">봄
+      <div class="spring" onclick="display('list1')">SPRING
         <div id="list1" style="display:none">
           <li class="list1_minimer"><a href=poscoclothes2.html>미니멀</a></li>
           <li class="list1_easy"><a href=poscoclothes3.html>이지캐쥬얼</a></li>
@@ -34,10 +36,10 @@
           <li>아메카지</li>
           <li>럭셔리</li>
         </div>
-     </div>
+      </div>
     </div>
-   <div class="summerbackground">
-      <div class="summer" onclick="display('list2')">여름
+    <div class="summerbackground">
+      <div class="summer" onclick="display('list2')">SUMMER
         <div id="list2" style="display:none">
           <li>미니멀</li>
           <li>이지캐쥬얼</li>
@@ -47,19 +49,18 @@
         </div>
       </div>
     </div>
-  <div class="fallbackground">
-    <div class="fall" onclick="display('list3')">가을
-     <div id="list3" style="display:none">
-      <li>미니멀</li>
-      <li>이지캐쥬얼</li>
-      <li>스트릿</li>
-      <li>아메카지</li>
-      <li>럭셔리</li>
+    <div class="fallbackground">
+      <div class="fall" onclick="display('list3')">FALL
+        <div id="list3" style="display:none">
+          <li>미니멀</li>
+          <li>이지캐쥬얼</li>
+          <li>스트릿</li>
+          <li>아메카지</li>
+          <li>럭셔리</li>
+        </div>
      </div>
-    </div>
-  </div>
-    <div class="winterbackground">
-      <div class="winter" onclick="display('list4')">겨울
+    </div>     
+      <div class="winter" onclick="display('list4')">WINTER
         <div id="list4" style="display:none">
           <li>미니멀</li>
           <li>이지캐쥬얼</li>
@@ -68,40 +69,49 @@
           <li>럭셔리</li>
         </div>
       </div>
-    </div>
   </div>
   <!-- 메뉴화면 밑 배경사진 -->
-    <div class="menubackground">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQbQJwli_zyLU-ol5JOl4mMbbDBif_tcG62w&usqp=CAU">
+  <div class="menubackground">
+    <a href="https://www.ssense.com/ko-kr/editorial/market/off-to-the-races-everything-else-launches-cycling"><img src="https://res.cloudinary.com/ssenseweb/image/upload/w_480,q_90,f_auto,dpr_auto/v1655745694/f4dxlcxg7vmes9gwcqsq.jpg"/></a>
+    <a href="https://www.ssense.com/ko-kr/editorial/market/fear-of-god-essentials"><img src="https://res.cloudinary.com/ssenseweb/image/upload/w_480,q_90,f_auto,dpr_auto/v1655300180/w7k1a3vsq9llf5uxmavw.jpg"/></a>
+    <a href="https://www.ssense.com/ko-kr/editorial/culture/fame-is-fleeting-celebrity-memoirs-are-forever"><img src="https://res.cloudinary.com/ssenseweb/image/upload/w_480,q_90,f_auto,dpr_auto/v1654699821/di3hkg7jamutgcrph7g7.jpg"/></a>
+  </div>
+
+  <div class="pictext">
+    <p>Today's News</p>
+    <p>Today's News</p>
+    <p>Today's News</p>
+  </div>
+
+  <div class="narrowbox"></div>
+  <div class="bestitem_text">Best items</div>
+
+  <!-- 컨텐츠 사진 -->
+    <div class="minimer">    
+      <img src="https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222232F099000_1/rick-owens---.jpg" onmouseover="this.src='https:/img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222232F099000_4/rick-owens---.jpg'" onmouseout="this.src='https:/img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222232F099000_1/rick-owens---.jpg'">
+      <img src="https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/221301F067000_1/sportmax----.jpg" onmouseover="this.src='https:/img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/221301F067000_3/sportmax----.jpg'" onmouseout="this.src='https:/img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/221301F067000_1/sportmax----.jpg'">   
+      <img src="https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/212381F090007_1/thom-browne----.jpg" onmouseover="this.src='https:/img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/212381F090007_4/thom-browne----.jpg'" onmouseout="this.src='https:/img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/212381F090007_1/thom-browne----.jpg'">
+      <img src="https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/212553F057003_1/jacquemus-----.jpg" onmouseover="this.src='https:/img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/212553F057003_4/jacquemus-----.jpg'" onmouseout="this.src='https:/img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/212553F057003_1/jacquemus-----.jpg'">
     </div>
-    <div class="bestbackground">    
-      <img src="https://i.pinimg.com/236x/54/57/b8/5457b8d1253e3225438b338e7ca06daf.jpg">
-        <p>sdfsjdfhskfhskdfhsjkfhsjkfhjksdfhsjkdfhjksdfhjksfdhjksdhfksjdjfk</p>
-      <img src="https://i.pinimg.com/236x/54/57/b8/5457b8d1253e3225438b338e7ca06daf.jpg">
-        <p>sdfsjdfhskfhskdfhsjkfhsjkfhjksdfhsjkdfhjksdfhjksfdhjksdhfksjdjfk</p>   
-      <img src="https://i.pinimg.com/236x/54/57/b8/5457b8d1253e3225438b338e7ca06daf.jpg">
-        <p>sdfsjdfhskfhskdfhsjkfhsjkfhjksdfhsjkdfhjksdfhjksfdhjksdhfksjdjfk</p>
-      <img src="https://i.pinimg.com/236x/54/57/b8/5457b8d1253e3225438b338e7ca06daf.jpg">
-        <p>sdfsjdfhskfhskdfhsjkfhsjkfhjksdfhsjkdfhjksdfhjksfdhjksdhfksjdjfk</p>
-    </div>
-  <!-- 마지막 라인 -->
+  <!-- 하단 아이콘 -->
   <div class="right_message">
-    <div class="right_message_kakao"><img src='./picture/ico-kakao.png'></div>
-    <div class="right_message_insta"><img src='./picture/instsa-1.png'></div>
-</div>
-<div class="bottombackground">
-    <p class="notice">Customer center</p>
-    <p class="notice">T.000-1234-5678</p>
-    <p class="notice">Bank account</p>
-    <p class="notice">국민 0000-0027-000</p>
-</div>
-<div class="bottombackground2">
-    <span>COMPANY</span>
-    <span>AGREEMENT</span>
-    <span>PRIVACY POLICY</span>
-    <span>SHOPPING GUIDE</span>
-</div>
-  <script src="script2.js" defer></script>
+    <div><img src='./picture/KakaoTalk_20220701_134131270.png'></div>
+    <div class="kakao"><img src='./picture/KakaoTalk_20220701_134116093.png'></div>
+  </div>
+  <!-- 바닥 로고 및 배경화면 -->
+    <div class="bottombackground">
+      <p>Customer center</p>
+      <p>T.000-1234-5678</p>
+      <p>Bank account</p>
+      <p>국민 0000-0027-000</p>
+    </div>
+    <div class="bottombackground2">
+      <span>COMPANY</span>
+      <span>AGREEMENT</span>
+      <span>PRIVACY POLICY</span>
+      <span>SHOPPING GUIDE</span>
+    </div>
+    <script src="script2.js" defer></script>
 </body>
   
 </html>

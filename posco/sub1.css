@@ -4,21 +4,16 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 60px;  
+  padding-top: 80px;
   background-size: contain; 
 
 }
 .bestbackground img{
   height: 500px;  
 }
-.pictext1{
-  margin-left: 10%;
-}
-.pictext2{
-  margin-left: 40%; 
-}
-.pictext3{
-  margin-left: 70%; 
-}
+
+
+
 
 
 

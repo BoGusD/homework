@@ -1,0 +1,103 @@
+li{
+ list-style: none;
+}
+html, body {
+    font-family: "Elice Digital Baeum",sans-serif;
+  }
+body{
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: #4a4a4a;
+}
+header{
+    background-color: #ab9dfe;
+}
+header:hover{
+    background-color: white;
+    transition: 1s;
+}
+header .inner{
+    position: relative;
+    width: 1392px;
+    height: 72px;
+    padding: 0px 24px;
+    margin: 0 auto;
+    display: flex;
+}
+header .inner .header__logo{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    height: 32px;
+}
+header .inner .header__menu{
+    display: flex;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    height: 32px;    
+}
+header .inner .header__menu li img{
+    width: 16px;
+}
+header .inner .header__menu li img:hover{
+    transform: rotate(180deg);
+    transition: 0.3s;
+}    
+
+header .inner .header__menu li:hover{
+    background-color: rgb(246, 240, 240);
+}
+
+header .inner .header__menu{
+    display: flex;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 200px;
+    position: absolute;
+    height: 32px;    
+}
+header .inner .header__menu li{
+    padding: 0px 16px;
+}
+header .inner .header__btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    height: 72px;
+    margin: auto;
+}
+header .inner .header__btn .header__btn__login{
+    padding: 12px;
+    color: black;
+    margin:auto 0;
+    margin-right: 20px;
+    box-sizing: border-box;
+    border: 1px solid $dbdbdb;    
+}
+header .inner .header__btn .header__btn__login:hover{
+ text-decoration: underline;
+}
+header .inner .header__btn .header__btn__register{
+    width: 90px;  
+    margin:auto 0;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+}
+header .inner .header__btn .header__btn__register{
+    background-color: #4a4a4a;
+}

@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./main(07.04).css">
-    <link href="//font.elice.io/EliceDigitalBaeum.css" rel="stylesheet">
 
+    <!-- RESET CSS 적용 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <!-- 경로 문제로 페이지가 제대로 열리지 않은 것 수정! // 를 http:// 로 수정 -->
+    <link href="https://font.elice.io/EliceDigitalBaeum.css" rel="stylesheet">
+
+    <!-- 폰트 CSS 보다 main.css 가 더 늦게 호출 되어야 작성한 CSS 가 정상 반영 -->
+    <link rel="stylesheet" href="./main(07.04).css">
 </head>
+
 <body>
     <!-- header -->
     <header>
         <div class="inner">
             <div class="header__logo">
-            <a href="/">
-                <img src="https://elice.io/static/dc6054e07cd72edccb4c2f0ceccedb97/53925/elice_logo.webp"/>
-            </a>
+                <a href="/">
+                    <img src="https://elice.io/static/dc6054e07cd72edccb4c2f0ceccedb97/53925/elice_logo.webp" />
+                </a>
             </div>
             <!-- menu -->
-                <ul class="header__menu">
-                    <li>
-                        <a href="#">서비스<img src="down-arrow.png"/></a>
-                    </li>
-                    <li>
-                        <a href="#">엘리스<img src="down-arrow.png"/></a>
-                    </li>
-                    <li>
-                        <a href="#">고객 사례<img src="down-arrow.png"/></a>
-                    </li>
-                    <li>
-                        <a href="#">뉴스룸<img src="down-arrow.png"/></a>
-                    </li>
-                </ul>    
-                <div class="header__btn">
-                    <div class="header__btn__login">로그인</div>
-                        <div class="header__btn__register">도입문의</div>
-                </div>                  
-        </div> 
+            <ul class="header__menu">
+                <li>
+                    <!-- 한칸 떨어져 보이기 위해 공백 삽입 -->
+                    <a href="#">서비스 <img src="down-arrow.png" /></a>
+                </li>
+                <li>
+                    <a href="#">엘리스 <img src="down-arrow.png" /></a>
+                </li>
+                <li>
+                    <a href="#">고객 사례 <img src="down-arrow.png" /></a>
+                </li>
+                <li>
+                    <a href="#">뉴스룸 <img src="down-arrow.png" /></a>
+                </li>
+            </ul>
+            <div class="header__btn">
+                <div class="header__btn__login">로그인</div>
+                <div class="header__btn__register">도입문의</div>
+            </div>
+        </div>
     </header>
 </body>
+
 </html>

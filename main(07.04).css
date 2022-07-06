@@ -146,10 +146,11 @@ header .inner .header__menu .item:hover .service__contents .sub__menu{
     height: 300px;
     margin-left: 600px;
     top: 0;
+    /* line-height: 300px; */
 } 
 header .inner .header__menu .item:hover .service__contents .sub__menu span{
     
 }
-header .inner .header__menu .item .service__contents .sub__menu:hover li:not(:p)::after {
-    content: ">";
+header .inner .header__menu .item .service__contents .sub__menu:hover li:not(p):after {
+    content:url("right-arrow.png")
 }

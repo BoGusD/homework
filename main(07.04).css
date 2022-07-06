@@ -145,7 +145,11 @@ header .inner .header__menu .item:hover .service__contents .sub__menu{
     /* justify-content: space-around;  */
     height: 300px;
     margin-left: 600px;
+    top: 0;
 } 
-header .inner .header__menu .item:hover .service__contents .sub__menu:hover li:not(:p)::after {
+header .inner .header__menu .item:hover .service__contents .sub__menu span{
+    
+}
+header .inner .header__menu .item .service__contents .sub__menu:hover li:not(:p)::after {
     content: ">";
 }

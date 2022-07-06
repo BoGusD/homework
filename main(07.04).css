@@ -101,7 +101,7 @@ header .inner .header__btn .header__btn__login {
     margin: auto 0;
     margin-right: 20px;
     box-sizing: border-box;
-    border: 1px solid $dbdbdb;
+    border: 1px solid #dbdbdb;
 }
 
 header .inner .header__btn .header__btn__login:hover {
@@ -123,4 +123,29 @@ header .inner .header__btn .header__btn__register {
 
 header .inner .header__btn .header__btn__register {
     background-color: #4a4a4a;
+}
+header .inner .header__menu .item .service__contents{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    display: none;
+}
+header .inner .header__menu .item:hover .service__contents{
+    display: block;
+}
+header .inner .header__menu .item:hover .service__contents{
+    background-color: white;
+    padding: 20px 0px;
+    width: 100%;
+}
+header .inner .header__menu .item:hover .service__contents .sub__menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: space-around;  */
+    height: 300px;
+    margin-left: 600px;
+} 
+header .inner .header__menu .item:hover .service__contents .sub__menu:hover li:not(:p)::after {
+    content: ">";
 }

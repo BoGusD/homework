@@ -16,7 +16,7 @@ function onSubmit(e) {
         return;
     }
     //todolist가 8개인 상황에서 하나 li를 제거해서 8줄 유지
-    if(todos.childElementCount===8){
+    else if(todos.childElementCount===8){
     todos.classList.remove("todos:nth-child(1)");
     }
     const li = document.createElement('li');

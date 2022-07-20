@@ -75,4 +75,31 @@ let scrollYPos;
 window.addEventListener("scroll", function(){
   scrollYPos=window.scrollY;
   console.log(scrollYPos);
-})
+  if (scrollYPos > 500) {
+    const peruAnimate = document.querySelector(".peru");
+    peruAnimate.classList.add("animate");
+   }
+  if (scrollYPos > 1000) {
+    const indoAnimate = document.querySelector(".indonesia");
+    indoAnimate.classList.add("animate");
+   }
+   if (scrollYPos > 1420) {
+    const favoriteAnimate = document.querySelector(".favorite");
+    favoriteAnimate.classList.add("animate");
+   }
+
+   if (scrollYPos > 2100) {
+    const magazineAnimate = document.querySelector(".magazine");
+    magazineAnimate.classList.add("animate");
+   }
+
+   if (scrollYPos > 2800) {
+    const storeAnimate = document.querySelector(".store");
+    storeAnimate.classList.add("animate");
+   }
+});
+window.onload = () => {
+  const visualInner = document.querySelector(".visual .inner");
+  visualInner.classList.add("animate");
+ };
+

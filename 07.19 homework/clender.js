@@ -13,6 +13,7 @@ $table.addEventListener("click", function(e){
   if(e.target.tagName === "P" ){
     $date.value = e.target.textContent;   
     console.log(e.target);
+    console.log(e.currentTarget);
     number = e.target.textContent;
   }
 });

@@ -6,14 +6,18 @@ let targetEl;
 
 
 calendar.addEventListener("click", function (e) {
+  console.log(e.target.tagName);
   // 클릭된 요소의 종류에 따라 각각의 기능을 수행
   if (e.target.tagName === "P") {
+    console.log("!");
+    
     // 날짜(P 태그)가 클릭이 되면 부모 요소를 전역 변수에 저장하여 위치 전달
     date.value = e.target.textContent;
     
     targetEl = e.target.parentNode;
     
   } else if (e.target.tagName === "DIV") {
+    console.log("@");
     // 추가 된 TASK(DIV 요소로 추가)가 클릭이 되면 삭제
     e.target.remove();
   } else {
@@ -34,5 +38,5 @@ function writeSchedule() {
   targetEl.append(addEl);
 
   // input의 text를 초기화
-  content.value = "";
+    content.value = "";
 }

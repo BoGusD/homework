@@ -26,26 +26,27 @@ function writeSchedule(){
   // number가 들어있는 query를 찾아서 거기에 입력
   const allPs = document.querySelectorAll('p')
   
-  allPs.forEach((ele, i)=>{
-    if(ele.textContent == number){
+  // allPs.forEach((ele, i)=>{
+  //   if(ele.textContent == number){
      
-      textValue = document.createElement("div");
-      textValue.innerHTML = $content.value; 
-      textValue.addEventListener('click', deleteMe)
-      
-      ele.appendChild(textValue);
-    }
-  })
-
-  // 같은 로직
-  // for(let i=0; i<allPs.length; i++){
-  //   if(allPs[i].textContent == number){
   //     textValue = document.createElement("div");
   //     textValue.innerHTML = $content.value; 
   //     textValue.addEventListener('click', deleteMe)
-  //     allPs[i].appendChild(textValue);
+      
+  //     ele.appendChild(textValue);
   //   }
-  // }
+  // })
+
+  // 같은 로직
+  for(let i=0; i<allPs.length; i++){
+    if(allPs[i].textContent == number){
+      textValue = document.createElement("div");
+      textValue.innerHTML = $content.value; 
+      textValue.addEventListener('click', deleteMe)
+      allPs[i].appendChild(textValue);
+     
+    }
+  }
 
   function deleteMe(e){
     // 부모를 찾아서 자식 삭제
@@ -53,5 +54,7 @@ function writeSchedule(){
     // console.log('e.target',e.target)
     // console.log('e.target.childNode',e.target.childNode)
     e.target.innerHTML = '';
+    $date.value = "";
+    $content.value = "";
   }
 }

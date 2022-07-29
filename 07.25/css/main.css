@@ -1,0 +1,266 @@
+@charset  "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Great+Vibes&family=Nanum+Myeongjo&display=swap');
+/* font-family: 'Nanum Myeongjo', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+/* font-family: 'Edu VIC WA NT Beginner', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Mochiy+Pop+One&display=swap');
+/* font-family: 'Mochiy Pop One', sans-serif; */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li, ul {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+/* logo */
+h1 a{
+  margin-top: 20px;
+  position:relative;
+  text-align: center;
+  color: brown;
+  display: flex;
+  flex-direction: column;
+  font-family: "Nanum Myeongjo";
+  z-index: 2;
+
+  translate: (0, -50%);
+}
+
+
+/* HEADER */
+header{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+  padding: 3vh 3vw;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+  
+  /* gnb */
+}
+header #snb{
+  display: none;
+}
+
+header #btn_menu{
+  display: none;
+}
+
+
+header #gnb {
+  display: flex;
+  z-index: 2;
+ 
+}
+header #gnb li{
+  margin: 0px 20px;
+  color: white;
+  font: 20px/1 "Edu VIC WA NT Beginner";
+}
+
+
+header #gnb li i{
+  padding: 10px;
+  color: GOLD
+}
+header #gnb li i.fa-utensils:hover{
+  transform: rotate(360deg);
+  color: red;
+  transition: 2s;
+}
+header #gnb li i.fa-paintbrush:hover{
+  transform: rotate(360deg);
+  color: red;
+  transition: 2s;
+}
+
+
+header #gnb li i.fa-newspaper:hover{
+  color: red;
+  transition: 2s;
+}
+header #gnb li i.fa-comment:hover{
+  color:red;
+  transform: 2s;
+}
+
+
+header #gnb li:hover{
+  cursor: pointer;
+  color: yellow;
+}
+
+header #gnb> li> ul> li{
+  margin-left: 25px;
+  padding: 10px;
+ 
+  
+}
+header #gnb> li> ul> li a{
+  color: white;
+}
+header #gnb> li> ul> li a:hover{
+  text-decoration: underline;
+  color: aqua;
+}
+
+
+
+
+/* sns */
+header .sns{
+  display: flex;
+  margin-right: -12vh;
+  z-index: 2;
+  
+}
+header .sns li i{
+  padding: 5px;
+}
+header .sns li a{
+  font: 16px/1 "Nanum Myeongjo";
+  letter-spacing: 1px;
+  color: white;
+}
+
+/* video */
+figure {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: 1;
+}
+figure video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* text */
+figure .text{
+  z-index: 2;
+  position: absolute;
+  left: 11vw;
+  top: 50%;
+  opacity: 0;
+  translate: (0, -50%);
+}
+figure .text.animate  {
+  transition: 4s;
+  opacity: 1;
+}
+figure .text{
+  transition: 3s;
+}
+figure .text p{
+  color: white;
+  font: 8vh/1 Nanum Myeongjo;
+  padding: 10xp 25px;
+}
+figure .text p:hover{
+  transition: 1s;
+	color: gold;
+
+}
+
+figure .text li i{
+  font-size: 4vh/1;
+  padding: 40px;
+  color: gold;
+}
+figure .text li i:hover{
+  transition: 3s;
+  color: white;
+}
+
+figure .text li strong{
+  margin-top: 20px;
+  padding: 10px;
+  color: red;
+  font: 4vh/1 "Nanum Myeongjo";
+}
+figure .text li strong:hover{
+  transition: 1s;
+  color: antiquewhite;
+}
+
+/* btn_menu */
+header #snb .btn_menu{
+  position: absolute;
+  left: 13vw;
+  margin-bottom: 10vh; 
+}
+/* sub_menu */
+header #snb .sub_menu{
+  position: absolute;
+  left: 6vw;
+  padding:10px 25px;
+  margin-top: 20px;
+  opacity: 1;
+  translate: 0.4s;
+}
+header #snb .sub_menu.hide{
+  opacity: 0;  
+}
+/* footer */
+footer {
+  width: 100%;
+  bottom: 0;
+  left: 0px;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  font: 12px/1 "Mochiy Pop One";
+  color: #dadada;
+  letter-spacing: 2px;
+  padding: 5vh 5vw;
+}
+/* mobile  */ 
+ @media screen and (max-width: 875px) {
+
+  header .sns{
+    display: none;
+  }
+ }
+
+ @media screen and (max-width: 360px){
+  header #gnb{
+    display: none;
+  }
+   header #snb{
+    display: block;
+ 
+  }
+  header #snb .btn_menu{
+    display: block;
+    color: white;
+  }
+  header #snb .sub_menu li{
+    padding: 10px 0px;
+    font:16px/1
+  }
+  header #snb .sub_menu li a{
+    color: white;
+  }
+  header #snb .sub_menu li a:hover{
+    color: yellow;
+    text-decoration: underline;  
+  }
+  header #snb .sub_menu li i{
+    margin-left: 10px;
+  }
+  figure .text p{
+    font-size: 11vw;
+  }
+ }
+ 
+
+ 
